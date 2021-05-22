@@ -1,0 +1,52 @@
+{
+  "name": "footloose",
+  "version": "1.0.0",
+  "description": "frontend of footloose page",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinOlaffCubaDavila/fooloose.git"
+  },
+  "keywords": [
+    "Reactjs",
+    "Redux",
+    "React",
+    "Router"
+  ],
+  "author": "Edwin Cuba <edwincubad@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdwinOlaffCubaDavila/fooloose/issues"
+  },
+  "homepage": "https://github.com/EdwinOlaffCubaDavila/fooloose#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.5",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "redux-devtools": "^3.7.0",
+    "sass": "^1.33.0",
+    "sass-loader": "^11.1.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
