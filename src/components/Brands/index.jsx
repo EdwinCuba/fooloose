@@ -1,50 +1,44 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 import './index.scss';
 
 const Brands = () => {
+  SwiperCore.use([Autoplay]);
+
   return (
     <div className="Brands">
-      <Carousel
-        autoPlay 
-        centerMode 
-        emulateTouch 
-        infiniteLoop
-        showIndicators={true}
-        showStatus={false}
-        showThumbs={false}
-        showArrows={false}
-        transitionTime={1000}
-        interval={500}
-        centerMode={true}
-        centerSlidePercentage={5}
-        swipeable={false}
+      <Swiper
+        autoplay={{delay: 0}}
+        longSwipesRatio={0}
+        speed={1000}
+        loop
+        slidesPerView={'3'}
+        spaceBetween={0}
+        allowTouchMove={false}
       >
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-        
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-        
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-        
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-        
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-        
-        <div>
-          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-adidas.svg" width={50} alt="" />
-        </div>
-      </Carousel>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://footloose.vtexassets.com/arquivos/ftl-brand-footloose.svg" alt="" />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }
