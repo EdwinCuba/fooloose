@@ -1,8 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
+import FrontSlider from '../components/FrontSlider';
+import BestSeller from '../components/BestSeller';
 
 const Home = () => {
   return (
-    <h1>aa</h1>
+    <div className="Home">
+      <Header />
+      <FrontSlider />
+      <BestSeller />
+    </div>
   );
 }
 

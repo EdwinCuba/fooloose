@@ -1,0 +1,56 @@
+@use '../../assets/utils/styles/colors';
+
+.BestSeller{
+  width: 100%;
+  padding: 15px;
+  padding-top: 30px;
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+      color: black;
+    }
+
+    a{
+      color: colors.$a;
+      text-decoration: underline;
+    }
+  }
+
+  .products{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+
+    .item{
+      position: relative;
+      padding-bottom: 30px;
+
+      img{
+        width: 100%;
+      }
+      h6{
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      span{
+        font-size: 1.4rem;
+        font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+  }
+}
