@@ -1,24 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from '../components/Header';
 import FrontSlider from '../components/FrontSlider';
 import Section from '../components/Section';
 import Brands from '../components/Brands';
 import Features from '../components/Features';
-import Footer from '../components/Footer';
+import FastShip from '../components/FastShip';
 
 const Home = (props) => {
   const { bestSeller, newArrival } = props;
 
   return (
     <div className="Home">
-      <Header />
       <FrontSlider />
-      <Section section={bestSeller} products={bestSeller.products} />
+      <Section section={bestSeller} products={bestSeller.products.slice(0, 4)} />
       <Brands />
-      <Section section={newArrival} products={newArrival.products} />
+      <Section section={newArrival} products={newArrival.products.slice(0, 4)} />
+      <FastShip />
       <Features />
-      <Footer />
     </div>
   );
 }

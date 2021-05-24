@@ -1,0 +1,72 @@
+@use '../../assets/utils/styles/colors';
+
+.ProductInfo{
+  padding: 20px 15px;
+
+  .image{
+    border: 2px solid colors.$purple;
+    margin-bottom: 20px;
+  }
+
+  .info{
+    h2{
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: colors.$purple;
+    }
+
+    .stats{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price{
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: colors.$purple;
+    }
+
+    .stock{
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: black;
+    }
+  }
+
+  .buy{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+    button{
+      padding: 5px 10px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      background-color: colors.$red;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+
+  .desc{
+    margin: 10px 0;
+
+    h3{
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    p{
+      font: 1.2rem;
+      line-height: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}

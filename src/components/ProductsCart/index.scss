@@ -1,0 +1,45 @@
+@use '../../assets/utils/styles/colors';
+
+.ProductsCart{
+  .container{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .item{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid colors.$purple;
+    }
+
+    button{
+      padding: 10px;
+      outline: none;
+      border: none;
+      margin: 10px 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: white;
+      border-radius: 11px;
+      background-color: colors.$red;
+    }
+  }
+
+  .empty{
+    padding: 30px;
+
+    p{
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    a{
+      margin-left: 10px;
+      text-decoration: underline;
+      color: colors.$red;
+    }
+  }
+}
